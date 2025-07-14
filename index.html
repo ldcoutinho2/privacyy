@@ -1,4 +1,4 @@
-<!-- index.html atualizado -->
+<!-- index.html corrigido -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -23,7 +23,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy | Letícia Castro/title>
+  <title>Privacy | Letícia Castro</title>
 
   <link rel="icon" type="image/png" href="images/logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -53,6 +53,9 @@
       top: 0;
       left: 0;
     }
+    .blurred {
+      filter: blur(4px);
+    }
   </style>
 </head>
 
@@ -81,8 +84,7 @@
 <div class="max-w-3xl mx-auto mt-16 px-6">
   <div>
     <div class="flex items-center">
-      <h2 class="text-lg font-bold text-black">Letícia Castro
-</h2> 
+      <h2 class="text-lg font-bold text-black">Letícia Castro</h2> 
       <img class="h-5 w-5 ml-2" src="images/badge-check.svg" alt="Verificado">
     </div>
     <p class="text-sm text-gray-600">@Letícia Castro</p> 
@@ -91,7 +93,9 @@
 
 <!-- Detalhes -->
 <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-lg mt-4">
-  <p id="profile-details" class="text-gray-800 text-sm blurred">Você não vai se arrepender de ter chegado até aqui meu amor, clica aqui pra ter acesso a todos os conteúdos da Bruninha, e vem conhecer o meu lado mais put*…🙈🌶️</p>
+  <p id="profile-details" class="text-gray-800 text-sm blurred">
+    Você não vai se arrepender de ter chegado até aqui meu amor, clica aqui pra ter acesso a todos os conteúdos da Bruninha, e vem conhecer o meu lado mais put*…🙈🌶️
+  </p>
   <button id="toggleButton" class="mt-2 text-orange-500 hover:text-orange-600">Ver mais</button>
 
   <!-- Redes sociais -->
@@ -105,7 +109,7 @@
   <br>
   <h6 class="title-subscribe">ASSINATURAS</h6>
   <a href="https://app.pushinpay.com.br/service/pay/9f5af675-1a8e-49f6-aa7b-c0623f99a568" target="_blank" class="subscribe-btn mt-2">
-    <span>Assinar (vitalicio)</span>
+    <span>Assinar (vitalício)</span>
     <span>R$ 18,90 / mês</span>
   </a>
 
@@ -147,13 +151,13 @@
     }
   });
 
-  // Eventos de clique para redirecionar com pixel
+  // Eventos de clique com redirecionamento dinâmico e pixel
   document.querySelectorAll("a[href]").forEach((a) => {
     a.addEventListener("click", (e) => {
       e.preventDefault();
       try { fbq("track", "InitiateCheckout"); } catch {}
       const utm = localStorage.getItem("myCustomUTMData");
-      let url = "https://app.pushinpay.com.br/service/pay/9f5af675-1a8e-49f6-aa7b-c0623f99a568";
+      let url = a.href;
       if (utm) {
         const params = JSON.parse(utm);
         const pushUrl = new URL(url);
