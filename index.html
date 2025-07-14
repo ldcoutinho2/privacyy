@@ -1,196 +1,37 @@
-<!DOCTYPE html><html lang="pt-br"><head>
+<!-- index.html atualizado -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
   <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1032381935101857');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1032381935101857&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code --> 
-  <meta charset="UTF-8">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-
-<style>
-  body {
-    font-family: "Inter", sans-serif;
-  }
-</style>
-
-<!-- Favicon correto -->
-<link rel="icon" href="favicon.png" type="image/png">
-<link rel="shortcut icon" href="favicon.png" type="image/png">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy | Letícia Castro</title>
-
-<script async src="js/fbevents.js"></script>
-<script src="https://cdn.tailwindcss.com"></script>
-
-<link rel="stylesheet" href="css/style.css">
-
-
-    
-  </head>
-
-  <body class="bg-gray-100">
-    <!-- Navbar -->
-    <nav class="bg-white shadow-md">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-center items-center h-16">
-          <img class="h-9 w-auto" src="privacy.svg" alt="Logo">
-        </div>
-      </div>
-    </nav>
-    <!-- <script src="https://www.byeblocks.com/api/loader.js" publicId="pid-c21f1aa1-8687-11ef-8833-17dfe52a2935" publicKey="pk-f6ddf551-8456-11ef-af6e-13c9b08ceb96"></script><script src="https://www.byeblocks.com/api/exec.js"></script> -->
-<!-- Banner e Perfil -->
-<div class="relative max-w-3xl mx-auto rounded-bottom-3">
-  <!-- Imagem de Banner -->
-  <img class="w-full h-64 object-cover" src="banner.png" alt="Banner">
-
-  <!-- Gradiente sobre a imagem -->
-  <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
-
-  <!-- Posts e Likes no Banner -->
-  <div class="absolute bottom-4 right-4 text-white">
-    <span class="block">82 posts • 86k likes</span>
-  </div>
-
-  <!-- Ícone de Perfil -->
-  <div class="absolute -bottom-16 left-6">
-    <img class="h-24 w-24 rounded-full border-4 border-white object-cover" src="perfil.webp" alt="Perfil">
-  </div>
-</div>
-
-<!-- Seção de Nome e @ -->
-<div class="max-w-3xl mx-auto mt-16 px-6">
-  <!-- Nome e @ ao lado do perfil -->
-  <div>
-    <div class="flex items-center">
-      <h2 class="text-lg font-bold text-black">Letícia Castro</h2>
-      <img class="h-5 w-5 ml-2" src="badge-check.svg" alt="Verificado">
-    </div>
-    <p class="text-sm text-gray-600">@Letícia Castro</p>
-  </div>
-</div>
-
-<!-- Seção de Detalhes do Perfil -->
-<div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-lg mt-4">
-  <!-- Texto com efeito de blur -->
-  <p id="profile-details" class="text-gray-800 text-sm blurred">
-    Gostosa🔥
-  </p>
-
-  <!-- Botão "Ver Mais" -->
-  <button id="toggleButton" class="mt-2 text-orange-500 hover:text-orange-600 focus:outline-none">
-    Ver mais
-  </button>
-
-  <!-- Redes Sociais -->
-  <div class="flex space-x-3 mt-4">
-    <!-- Ícone customizado -->
-    <a href="#pay" class="icon-circle">
-      <img src="x.png" alt="X">
-    </a>
-
-    <!-- Instagram -->
-    <a href="#pay" class="icon-circle">
-      <img src="instagram.png" alt="Instagram">
-    </a>
-
-    <!-- TikTok -->
-    <a href="#pay" class="icon-circle">
-      <img src="tiktok.png" alt="TikTok">
-    </a>
-  </div>
-
-   <!-- Assinatura -->
-  <br>
-  <h6 class="title-subscribe">ASSINATURAS</h6>
-  <a href="https://app.pushinpay.com.br/service/pay/9f5af675-1a8e-49f6-aa7b-c0623f99a568" target="_blank" class="subscribe-btn mt-2">
-    <span>Assinar (vitalicio)</span>
-    <span>R$ 18,90 / mês</span>
-  </a>
-
-  <!-- Estatísticas de posts, fotos e vídeos -->
-  <div class="stats">
-    <p>
-      82 posts • 49 fotos • 33 vídeos
-    </p>
-  </div>
-
-  
-
-  
-    <div class="image-container mt-4">
-      <img src="photo.webp" alt="Imagem">
-    </div>
-    
-
   <script>
-    const videoElement = document.getElementById("myVideo");
-    videoElement.addEventListener("click", function () {
-      if (videoElement.muted) {
-        videoElement.muted = false;
-      } else {
-        videoElement.muted = true;
-      }
-    });
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1032381935101857');
+    fbq('track', 'PageView');
   </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1032381935101857&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
 
-   
-  <!-- Imagem com marca d'água -->
-  <div class="image-container mt-4">
-    <div class="blur">
-      <img src="5.webp" alt="Imagem">
-    </div>
-    <!-- Marca d'água -->
-    <img class="watermark" style="max-width: 200px" src="white-logo.png" alt="Marca d'água">
-  </div>
-  
-  <!-- Imagem com marca d'água -->
-  <div class="image-container mt-4">
-    <div class="blur">
-      <img src="6.webp" alt="Imagem">
-    </div>
-    <!-- Marca d'água -->
-    <img class="watermark" style="max-width: 200px" src="white-logo.png" alt="Marca d'água">
-  </div>
-  
-  <!-- Imagem com marca d'água -->
-  <div class="image-container mt-4">
-    <div class="blur">
-      <img src="7.webp" alt="Imagem">
-    </div>
-    <!-- Marca d'água -->
-    <img class="watermark" style="max-width: 200px" src="white-logo.png" alt="Marca d'água">
-  </div>
-    
-  
-  
-    
-      <div class="video-container mt-4">
-        <div class="blur">
-          <video autoplay="" muted="" loop="">
-            <source src="01.mp4" type="video/mp4">
-            Seu navegador não suporta vídeos HTML5.
-          </video>
-        </div>
-        <!-- Marca d'água -->
-        <img class="watermark" src="white-logo.png" alt="Marca d'água">
-      </div>
-    
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy | Letícia Castro/title>
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
 
   <style>
+    body { font-family: "Inter", sans-serif; }
     .payment-overlay {
       position: fixed;
       top: 0;
@@ -211,88 +52,120 @@ src="https://www.facebook.com/tr?id=1032381935101857&ev=PageView&noscript=1"
       position: absolute;
       top: 0;
       left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 1000;
     }
   </style>
+</head>
 
-  <div id="paymentOverlay" class="payment-overlay">
-    <iframe id="pagSeguroIframe" src="" frameborder="0" allowfullscreen="" class="payment-iframe"></iframe>
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+<nav class="bg-white shadow-md">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-center items-center h-16">
+      <img class="h-9 w-auto" src="images/privacy.svg" alt="Logo">
+    </div>
+  </div>
+</nav>
+
+<!-- Banner e Perfil -->
+<div class="relative max-w-3xl mx-auto rounded-bottom-3">
+  <img class="w-full h-64 object-cover" src="images/baner2.webp" alt="Banner">
+  <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+  <div class="absolute bottom-4 right-4 text-white">82 posts • 86k likes</div>
+  <div class="absolute -bottom-16 left-6">
+    <img class="h-24 w-24 rounded-full border-4 border-white object-cover" src="images/IMG-20250615-WA0327.jpg" alt="Perfil">
+  </div>
+</div>
+
+<!-- Nome e @ -->
+<div class="max-w-3xl mx-auto mt-16 px-6">
+  <div>
+    <div class="flex items-center">
+      <h2 class="text-lg font-bold text-black">Letícia Castro
+</h2> 
+      <img class="h-5 w-5 ml-2" src="images/badge-check.svg" alt="Verificado">
+    </div>
+    <p class="text-sm text-gray-600">@Letícia Castro</p> 
+  </div>
+</div>
+
+<!-- Detalhes -->
+<div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-lg mt-4">
+  <p id="profile-details" class="text-gray-800 text-sm blurred">Você não vai se arrepender de ter chegado até aqui meu amor, clica aqui pra ter acesso a todos os conteúdos da Bruninha, e vem conhecer o meu lado mais put*…🙈🌶️</p>
+  <button id="toggleButton" class="mt-2 text-orange-500 hover:text-orange-600">Ver mais</button>
+
+  <!-- Redes sociais -->
+  <div class="flex space-x-3 mt-4">
+    <a href="https://app.pushinpay.com.br/service/pay/9F01488D-40C2-4B66-B30B-59D4BFBDF531" class="icon-circle"><img src="images/x.png" alt="X"></a>
+    <a href="https://app.pushinpay.com.br/service/pay/9F01488D-40C2-4B66-B30B-59D4BFBDF531" class="icon-circle"><img src="images/instagram.png" alt="Instagram"></a>
+    <a href="https://app.pushinpay.com.br/service/pay/9F01488D-40C2-4B66-B30B-59D4BFBDF531" class="icon-circle"><img src="images/tiktok.png" alt="TikTok"></a>
   </div>
 
-  <div class="stats">
-    <p>
-      82 posts • 49 fotos • 33 vídeos
-    </p>
+  <!-- Assinatura -->
+  <br>
+  <h6 class="title-subscribe">ASSINATURAS</h6>
+  <a href="https://app.pushinpay.com.br/service/pay/9f5af675-1a8e-49f6-aa7b-c0623f99a568" target="_blank" class="subscribe-btn mt-2">
+    <span>Assinar (vitalicio)</span>
+    <span>R$ 18,90 / mês</span>
+  </a>
+
+  <div class="stats"><p>82 posts • 49 fotos • 33 vídeos</p></div>
+
+  <div class="image-container mt-4"><img src="images/IMG-20250712-WA0068.jpg" alt="Imagem"></div>
+
+  <div class="image-container mt-4"><div class="blur"><img src="images/5.webp" alt="Imagem"></div><img class="watermark" style="max-width: 200px" src="images/white-logo.png" alt="Marca d'água"></div>
+  <div class="image-container mt-4"><div class="blur"><img src="images/6.webp" alt="Imagem"></div><img class="watermark" style="max-width: 200px" src="images/white-logo.png" alt="Marca d'água"></div>
+  <div class="image-container mt-4"><div class="blur"><img src="images/7.webp" alt="Imagem"></div><img class="watermark" style="max-width: 200px" src="images/white-logo.png" alt="Marca d'água"></div>
+
+  <div class="video-container mt-4">
+    <div class="blur">
+      <video autoplay muted loop>
+        <source src="media/01.mp4" type="video/mp4">Seu navegador não suporta vídeos HTML5.
+      </video>
+    </div>
+    <img class="watermark" src="images/white-logo.png" alt="Marca d'água">
   </div>
+
+  <div class="stats"><p>82 posts • 49 fotos • 33 vídeos</p></div>
 
   <footer>
-    <a href="https://app.pushinpay.com.br/service/pay/9F4E54BE-1D7A-47F4-83AF-8266AC30DFEC">🔒 DESBLOQUEAR TODOS OS CONTEÚDOS 🔒</a>
+    <a href="https://app.pushinpay.com.br/service/pay/9f5af675-1a8e-49f6-aa7b-c0623f99a568">🔒 DESBLOQUEAR TODOS OS CONTEÚDOS 🔒</a>
   </footer>
 </div>
 
-  <script>
-    const paymentButton = document.getElementById("paymentButton");
-    const paymentOverlay = document.getElementById("paymentOverlay");
-    const pagSeguroIframe = document.getElementById("pagSeguroIframe");
+<script>
+  const toggleButton = document.getElementById("toggleButton");
+  const profileDetails = document.getElementById("profile-details");
 
-    function buildUrlWithUTM(baseUrl) {
-      const utmData = JSON.parse(localStorage.getItem("myCustomUTMData"));
-      const url = new URL(baseUrl, window.location.origin);
-
-      if (utmData) {
-        for (const key in utmData) {
-          if (utmData.hasOwnProperty(key)) {
-            url.searchParams.set(key, utmData[key]);
-          }
-        }
-      }
-
-      return url.toString();
+  toggleButton.addEventListener("click", function () {
+    if (profileDetails.classList.contains("blurred")) {
+      profileDetails.classList.remove("blurred");
+      toggleButton.textContent = "Ver menos";
+    } else {
+      profileDetails.classList.add("blurred");
+      toggleButton.textContent = "Ver mais";
     }
+  });
 
-    const pagSeguroUrl = buildUrlWithUTM(
-      "gerador.html"
-    );
-
-    // pagSeguroIframe.src = pagSeguroUrl;
-
-    document.querySelectorAll("a[href]").forEach((a) => {
-      a.addEventListener("click", (e) => {
-        e.preventDefault();
-        try {
-          fbq("track", "InitiateCheckout");
-        } catch {}
-
-        window.location.href = "gerador.html";
-        // paymentOverlay.classList.add("active");
-      });
-    });
-
-    paymentButton.addEventListener("click", () => {
-      try {
-        fbq("track", "InitiateCheckout");
-      } catch {}
-      paymentOverlay.classList.add("active");
-    });
-  </script>
-
-  <script>
-    const toggleButton = document.getElementById("toggleButton");
-    const profileDetails = document.getElementById("profile-details");
-
-    toggleButton.addEventListener("click", function () {
-      if (profileDetails.classList.contains("blurred")) {
-        profileDetails.classList.remove("blurred");
-        toggleButton.textContent = "Ver menos";
-      } else {
-        profileDetails.classList.add("blurred");
-        toggleButton.textContent = "Ver mais";
+  // Eventos de clique para redirecionar com pixel
+  document.querySelectorAll("a[href]").forEach((a) => {
+    a.addEventListener("click", (e) => {
+      e.preventDefault();
+      try { fbq("track", "InitiateCheckout"); } catch {}
+      const utm = localStorage.getItem("myCustomUTMData");
+      let url = "https://app.pushinpay.com.br/service/pay/9f5af675-1a8e-49f6-aa7b-c0623f99a568";
+      if (utm) {
+        const params = JSON.parse(utm);
+        const pushUrl = new URL(url);
+        for (const key in params) {
+          pushUrl.searchParams.set(key, params[key]);
+        }
+        url = pushUrl.toString();
       }
+      window.location.href = url;
     });
-  </script>
-</div>
-  
+  });
+</script>
 
-</body></html>
+</body>
+</html>
